@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff; 
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+.logoheader {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoheader h1 {
+    color: var(--bitcoin-orange);
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+header img {
+    width: 37.45px;
+    height: 2.4rem;
+}
+
+.header-title-container h1 {
+    padding: 20px;
+    text-align: center;
+    color: var(--just-white);
+    font-family: 'DM Sans';
+    font-size: 1.5rem;
+}
+
+.header-title-container p {
+    padding: 10px;
+    text-align: center;
+    color: var(--just-white);
+    font-family: 'DM Sans';
+    font-size: 0.9rem;
+}
+
+.header-title-container a {
+    font-weight: bold;
+    font-family:'DM Sans';
+    background-color: var(--just-white);
+    position: absolute;
+    top: 280px;
+    left: calc(50% - 112px);
+    margin-top: 30px;
+    width: 230px;
+    height: 40px;
+    padding: 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--black);
+    text-align: center;
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.432);
+    border-radius: 5px;
+}
+
+.iconarrowd {
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    background: url(./assets/icons/down-arrow.svg);
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.firstsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    margin: 30px;
+}
+
+.bitcoinlogo {
+    width: 200px;
+    height: 200px;
+    background: url(./assets/img/Bitcoin.svg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 30px;
+}
+
+.firstsection h1, p {
+    padding: 15px;
+    font-family: 'DM Sans';
+}
+
+.firstsection h1 {
+    line-height: 25px;
+}
+
+.monedas {
+    color: var(--bitcoin-orange);
+}
+
+.comisiones {
+    color: var(--secondary-blue);
+}
+
+
+.monedas-p {
+    font-size: 0.9rem;
+    font-family: 'DM Sans';
+    display: inline-block;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    place-self: center;
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: rgba(255, 166, 0, 0.486);
+}
+
+.comisiones-p {
+    font-family: 'DM Sans';
+    font-size: 0.9rem;
+    display: inline-block;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    place-self: center;
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: rgba(0, 38, 255, 0.486);
+}
+
+.firstsection p {
+    color: #757575;
+}
+
+
+.tablegrid {
+    display: grid;
+    min-width: 250px;
+    min-height: 200px;
+    max-width: 250px;
+    max-height: 300px;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.185);
+    scroll-snap-align: center;
+}
+
+.tables {
+    display: flex;
+    width: 90vw;
+    gap: 30px;
+    height: 400px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+
+.table-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    scroll-snap-align: center;
+    margin-left: 30px;
+}
+
+.table-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    scroll-snap-align: center;
+    margin-right: 30px;
+}
+
+
+.arrow-down {
+    display: inline-block;
+    background: url(./assets/icons/trending-down.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 80%;
+    width: 15px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+.arrow-up {
+    display: inline-block;
+    background: url(./assets/icons/trending-up.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 80%;
+    width: 15px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+.batatabitlogo {
+    width: 37.45px;
+    height: 2.4rem;
+    position: absolute;
+    left: calc(50% - 20px);
+    top: -60px;
+}
+
+.infosection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--warm-black);
+}
+
+.infosection-title {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: var(--just-white);
+    font-family: 'DM Sans';
+    line-height: 25px;
+    position: relative;
+    padding: 20px;
+}
+
+.infosection-description {
+    color: #808080;
+    font-size: 0.95rem;
+}
+
+.cards-info {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+}
+
+.card {
+    display: flex;
+    width: 90%;
+    height: fit-content;
+    flex-direction: column;
+    text-align: start;
+    padding: 15px;
+    background-color: #282623;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    margin: 15px;
+}
+
+.card h1 {
+    padding: 3px;
+    color: var(--just-white);
+    font-family: 'DM Sans';
+    font-size: 1.15rem;
+}
+
+.card img {
+    padding: 3px;
+    width: 25px;
+    height: 25px;
+}
+
+.card p {
+    font-family: 'DM Sans';
+    font-size: 14px;
+    margin: 0;
+    padding: 1px;
+    color: #808080;
+}
+
+.imagecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #c97e34;
+}
+
+.imagegirl {
+    margin: 0 auto;
+    width: 320px;
+    height: 387px;
+    background: url(./assets/img/bitcoinbaby.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.imagecontainer h1 {
+    color: var(--just-white);
+    font-family: 'DM Sans';
+    margin-top: 20px;
+}
+
+.section-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-prices h1 {
+    font-family: 'DM Sans';
+    margin-top: 60px;
+    line-height: 25px;
+}
+
+.section-prices-description {
+    font-family: 'DM Sans';
+    color: rgba(117, 117, 117, 1);
+    font-size: 14.5px;
+}
+
+
+.cards-prices {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 90vw;
+    padding: 20px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+}
+
+.card-price {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 280px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.349);
+    border-radius: 10px;
+    margin-top: 40px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    scroll-snap-align: center;
+}
+
+
+.recomendation {
+    font-family: 'DM Sans';
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    font-weight: bold;
+    height: 35px;
+    width: 130px;
+    padding: 8px;
+    border-radius: 10px;
+    position: absolute;
+    top: -20px;
+}
+
+.second-card-price {
+    position: relative;
+}
+
+.pay {
+    font-weight: bold;
+    font-family: 'DM Sans';
+    font-size: 0.95rem;
+    padding: 15px;
+    position: relative;
+}
+
+.price {
+    display: inline-block;
+    position: relative;
+    right: 10px;
+    font-size: 3.5rem;
+    letter-spacing: -5px;
+    font-weight: bolder;
+}
+
+.card-price-description {
+    color: #757575;
+    font-size: 0.8rem;
+}
+
+.card-price a {
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    left: calc(50% - 100px);
+    font-family: 'DM Sans';
+    text-decoration: none;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.arrowicon {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: 6px;
+    width: 30px;
+    height: 19.5px;
+    background: url(./assets/icons/orange-right-arrow.svg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.dollaricon {
+    display: inline-block;
+    background: url(./assets/icons/dollar-sign.svg);
+    width: 20px;
+    height: 30px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+li {
+    list-style: none;
+    color: var(--just-white);
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    font-family: 'DM Sans';
+    font-weight: bold;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right p {
+    font-family: 'DM Sans';
+    font-size: 0.5rem;
+    padding: 0;
+    color: var(--just-white);
+}
+
+.batatabitlogo-footer {
+    width: 37.45px;
+    height: 2.4rem;
+}
+
+@media (min-width: 660px) {
+    .tables {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1020px) {
+    .card {
+        width: 40%;
+    }
+
+    .cards-info {
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        flex-wrap: wrap;
+    }
+
+    .cards-prices {
+        justify-content: center;
+    }
+}
