@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 :root {
     --bitcoin-orange: #f7931a;
     --soft-orange: #ffe9d5;
@@ -17,7 +21,7 @@ html {
     --black: #201e1c;
     --grey: #bababa;
     --off-white: #faf8f7;
-    --just-white: #fff; 
+    --just-white: #fff;
 }
 
 header {
@@ -67,7 +71,7 @@ header img {
 
 .header-title-container a {
     font-weight: bold;
-    font-family:'DM Sans';
+    font-family: 'DM Sans';
     background-color: var(--just-white);
     position: absolute;
     top: 280px;
@@ -113,7 +117,8 @@ header img {
     margin: 30px;
 }
 
-.firstsection h1, p {
+.firstsection h1,
+p {
     padding: 15px;
     font-family: 'DM Sans';
 }
@@ -358,7 +363,7 @@ header img {
 
 .card-price {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 300px;
